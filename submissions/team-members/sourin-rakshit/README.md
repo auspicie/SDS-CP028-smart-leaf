@@ -31,6 +31,7 @@ The dataset is hosted on Kaggle and contains categorized images of crop diseases
 - Matplotlib, Seaborn
 - Scikit-learn
 - TQDM
+- Optuna
 
 ---
 

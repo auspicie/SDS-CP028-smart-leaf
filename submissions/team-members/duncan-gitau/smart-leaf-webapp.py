@@ -5,13 +5,13 @@ from torchvision.models import resnet50
 import torchvision.transforms as transforms
 from PIL import Image
 import gdown
+import os
 
-#Download Model for Google Drive
-import gdown
-
-url = "https://drive.google.com/uc?id=1yT9nnsq9OeQPTpx07ThNdQeILXfx7HyU"
-output = "resnet50_crop_disease.pth"
-gdown.download(url, output, quiet=False)
+# Download model from Google Drive only if it doesn't already exist
+model_path = "resnet50_crop_disease.pth"
+if not os.path.exists(model_path):
+    url = "https://drive.google.com/file/d/1yT9nnsq9OeQPTpx07ThNdQeILXfx7HyU/view?usp=sharing"
+    gdown.download(url, model_path, quiet=False, fuzzy=True)
 
 
 # Define class labels
@@ -65,13 +65,13 @@ if input_type == "Upload Image":
     uploaded_file = st.file_uploader("Choose an image...")
     if uploaded_file is not None:
         image = Image.open(uploaded_file).convert("RGB")
-        st.image(image, caption="Uploaded Image", use_column_width=True)
+        st.image(image, caption="Uploaded Image", use_container_width=True)
 
 elif input_type == "Capture with Camera":
     camera_input = st.camera_input("Take a picture")
     if camera_input is not None:
         image = Image.open(camera_input).convert("RGB")
-        st.image(image, caption="Captured Image", use_column_width=True)
+        st.image(image, caption="Captured Image", use_container_width=True)
 
 # Inference
 if st.button("Predict Disease"):

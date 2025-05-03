@@ -4,6 +4,15 @@ import torch.nn as nn
 from torchvision.models import resnet50
 import torchvision.transforms as transforms
 from PIL import Image
+import gdown
+
+#Download Model for Google Drive
+import gdown
+
+url = "https://drive.google.com/uc?id=1yT9nnsq9OeQPTpx07ThNdQeILXfx7HyU"
+output = "resnet50_crop_disease.pth"
+gdown.download(url, output, quiet=False)
+
 
 # Define class labels
 class_names = [
@@ -28,7 +37,7 @@ def load_model():
         nn.Linear(256, NUM_CLASSES)
     )
 
-    ckpt = torch.load("resnet50_crop_disease.pth", map_location=torch.device("cpu"))
+    ckpt = torch.load("resnet50_crop_disease.pth", map_location=torch.device("cpu"), weights_only=False)
     model.load_state_dict(ckpt)
     model.eval()
     return model

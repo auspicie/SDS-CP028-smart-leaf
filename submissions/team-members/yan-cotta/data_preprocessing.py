@@ -17,10 +17,10 @@ val_transforms = transforms.Compose([
 
 # Split the dataset into train (70%), validation (15%), and test (15%)
 splitfolders.ratio(
-    "temp_dataset",           # Input folder with your dataset
-    output="split_dataset",   # Output folder for split datasets
-    seed=42,                  # For reproducibility
-    ratio=(0.7, 0.15, 0.15)  # Train, val, test split
+    "/home/yan/Documents/Git/SDS-CP028-smart-leaf/temp_dataset",
+    output="split_dataset",
+    seed=42,
+    ratio=(0.7, 0.15, 0.15)  # Updated to 3-way split
 )
 
 # Load the datasets

@@ -4,3 +4,6 @@ Pillow
 kaggle
 matplotlib
 numpy
+split-folders
+torch
+torchvision

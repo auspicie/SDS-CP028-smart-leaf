@@ -1,0 +1,23 @@
+# Core Python packages
+numpy
+pandas
+scikit-learn
+
+# PyTorch for deep learning
+torch
+torchvision
+torchaudio
+
+# Image processing
+Pillow
+opencv-python
+
+# Visualization and debugging
+matplotlib
+seaborn
+
+# Utility
+tqdm
+
+# Optional: Streamlit for visualization/UI
+streamlit

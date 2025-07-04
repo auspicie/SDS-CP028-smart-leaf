@@ -1,0 +1,15 @@
+Class,Train Count,Val Count,Test Count,Total
+Corn___Common_Rust,953,119,120,1192
+Corn___Gray_Leaf_Spot,839,51,52,942
+Corn___Healthy,929,116,117,1162
+Corn___Northern_Leaf_Blight,850,98,99,1047
+Potato___Early_Blight,850,100,100,1050
+Potato___Healthy,828,15,16,859
+Potato___Late_Blight,850,100,100,1050
+Rice___Brown_Spot,845,61,62,968
+Rice___Healthy,1190,148,150,1488
+Rice___Leaf_Blast,850,97,99,1046
+Rice___Neck_Blast,848,100,100,1048
+Wheat___Brown_Rust,847,90,91,1028
+Wheat___Healthy,892,111,113,1116
+Wheat___Yellow_Rust,848,92,93,1033

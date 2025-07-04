@@ -1,0 +1,9 @@
+streamlit>=1.30.0
+tensorflow>=2.12.0
+numpy>=1.23.0
+Pillow>=9.4.0
+
+# Optional tools (uncomment if needed)
+ scikit-learn>=1.2.0
+# opencv-python
+ matplotlib

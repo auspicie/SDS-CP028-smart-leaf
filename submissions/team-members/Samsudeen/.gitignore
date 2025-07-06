@@ -1,0 +1,23 @@
+# Ignore virtual environment  
+venv/  
+.env  
+
+# Ignore dataset files  
+data/  
+*.csv  
+*.json  
+
+# Ignore model artifacts  
+models/  
+*.pkl  
+*.h5  
+
+__pycache__/
+
+# Ignore other files
+*.jpg
+*.docx
+*.txt
+*.json
+*.xlsx
+

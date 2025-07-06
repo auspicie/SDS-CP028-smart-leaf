@@ -18,12 +18,6 @@ st.write(
     📁 Upload an image **or** 📸 take a photo of a crop leaf, and SmartLeaf will predict the crop disease.
     """
 )
-import os
-st.write("📁 Current directory:", os.getcwd())
-st.write("📄 Files in current directory:", os.listdir())
-if os.path.exists("utils"):
-    st.write("🧰 Contents of utils/:", os.listdir("utils"))
-
 
 # Load model
 @st.cache_resource

@@ -6,4 +6,4 @@ Pillow>=9.4.0
 # Optional tools (uncomment if needed)
 scikit-learn>=1.2.0
 # opencv-python
- matplotlib
+matplotlib
